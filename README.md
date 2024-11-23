@@ -91,10 +91,10 @@ This file implements the PyQt5-based GUI for interacting with the RSA algorithm:
 ## Example Output
 
 ### User Interface Example:
-![UI Example](ui_example "Preview of the User Interface")
+![UI Example](ui_example.png "Preview of the User Interface")
 
 ### Command-Line Example:
-![Command Line Example](cmdline_example "Preview of the Command Line")
+![Command Line Example](cmdline_example.png "Preview of the Command Line")
 
 ## Implementation Details
 
