@@ -109,13 +109,13 @@ This file implements the PyQt5-based GUI for interacting with the RSA algorithm:
 2. **Encryption**:
    - Ciphertext (\( C \)) is computed as:
      \[
-     $C = M^e mod n$
+     $C = M^e \mod n$
      \]
 
 3. **Decryption**:
    - Plaintext (\( M \)) is recovered as:
      \[
-     $M = C^d mod n$
+     $M = C^d \mod n$
      \]
 
 ### Primality Testing
