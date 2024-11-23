@@ -101,21 +101,21 @@ This file implements the PyQt5-based GUI for interacting with the RSA algorithm:
 ### Mathematical Background
 
 1. **Key Generation**:
-   - \( n = p \times q \)
-   - \( \phi(n) = (p - 1) \times (q - 1) \)
-   - Choose \( e \) such that \( 1 < e < \phi(n) \) and \( \text{gcd}(e, \phi(n)) = 1 \).
-   - Calculate \( d \) as the modular inverse of \( e \) modulo \( \phi(n) \).
+   - \( n = p . q \)
+   - \( \phi(n) = (p - 1) . (q - 1) \)
+   - Choose \( e \) such that \( 1 < e < \Φ(n) \) and \( \text{gcd}(e, \Φ(n)) = 1 \).
+   - Solve the following equation to find decipher key \( d \): \( e \) . \( d \) = 1 mod \( \Φ(n) \) and 0 \le d \le \( \Φ(n) \).
 
 2. **Encryption**:
    - Ciphertext (\( C \)) is computed as:
      \[
-     C = M^e \mod n
+     C = M^e mod n
      \]
 
 3. **Decryption**:
    - Plaintext (\( M \)) is recovered as:
      \[
-     M = C^d \mod n
+     M = C^d mod n
      \]
 
 ### Primality Testing
